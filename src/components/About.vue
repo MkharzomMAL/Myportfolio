@@ -1,5 +1,5 @@
 <template>
-    <div class="about-me-container">
+    <div id="about" class="about-me-container">
       <div class="button-container">
         <button class="about-me-button">About Me</button>
       </div>
@@ -56,9 +56,10 @@
   
   <script setup>
   import { ref } from 'vue';
+  import aboutImage from '../assets/about.png' ;
   
   // Profile image URL - replace with actual image URL in production
-  const profileImage = ref('src/assets/about.png');
+  const profileImage = ref(aboutImage);
   </script>
   
   <style scoped>
